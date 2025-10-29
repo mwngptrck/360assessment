@@ -1,0 +1,481 @@
+/**
+ * Admin Styles
+ */
+
+/* Dashboard Stats */
+.org360-admin-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.org360-stat-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,.1);
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.org360-stat-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,.15);
+}
+
+.org360-stat-box:nth-child(2) {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.org360-stat-box:nth-child(3) {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.org360-stat-box:nth-child(4) {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.org360-stat-icon {
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+    color: rgba(255,255,255,0.9);
+}
+
+.org360-stat-content h3 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.org360-stat-content p {
+    margin: 5px 0 0;
+    color: rgba(255,255,255,0.9);
+    font-weight: 500;
+}
+
+/* Quick Actions */
+.org360-admin-quick-actions {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.05);
+}
+
+.org360-admin-quick-actions h2 {
+    margin-top: 0;
+    color: #1d2327;
+    font-size: 20px;
+}
+
+.org360-action-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.org360-action-buttons .button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.org360-action-buttons .button-primary {
+    background: #2271b1;
+    border-color: #2271b1;
+}
+
+.org360-action-buttons .button-primary:hover {
+    background: #135e96;
+    border-color: #135e96;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(34, 113, 177, 0.3);
+}
+
+/* Info Box */
+.org360-admin-info {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.05);
+}
+
+.org360-info-box {
+    margin-top: 15px;
+}
+
+.org360-info-box h3 {
+    margin-top: 0;
+    color: #2271b1;
+    font-size: 18px;
+}
+
+.org360-info-box h4 {
+    color: #1d2327;
+    margin-top: 20px;
+}
+
+.org360-info-box ol, .org360-info-box ul {
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+/* Status Badges */
+.org360-status-badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.org360-status-active { 
+    background: #d4edda; 
+    color: #155724; 
+}
+
+.org360-status-pending { 
+    background: #fff3cd; 
+    color: #856404; 
+}
+
+.org360-status-inactive { 
+    background: #f8d7da; 
+    color: #721c24; 
+}
+
+/* Tables */
+.wp-list-table.org360-table {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.wp-list-table.org360-table thead {
+    background: #f8f9fa;
+}
+
+.wp-list-table.org360-table th {
+    font-weight: 600;
+    color: #1d2327;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.wp-list-table.org360-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+/* Grid Layout */
+.org360-admin-grid {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.org360-admin-main {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.org360-admin-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.org360-admin-box {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.05);
+}
+
+.org360-admin-box h3 {
+    margin-top: 0;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #2271b1;
+    color: #1d2327;
+    font-size: 16px;
+}
+
+.org360-admin-box ul {
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+.org360-admin-box .button-large {
+    padding: 12px 24px;
+    height: auto;
+    line-height: 1.4;
+}
+
+/* Assessment Builder */
+.org360-assessment-builder .org360-tabs-container {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,.05);
+}
+
+.org360-assessment-builder .nav-tab-wrapper {
+    border-bottom: 1px solid #e0e0e0;
+    margin: 0;
+    padding: 0 20px;
+    background: #f8f9fa;
+}
+
+.org360-assessment-builder .nav-tab {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 15px 20px;
+    font-weight: 500;
+    color: #646970;
+    transition: all 0.2s;
+}
+
+.org360-assessment-builder .nav-tab:hover {
+    background: rgba(34, 113, 177, 0.05);
+    color: #2271b1;
+}
+
+.org360-assessment-builder .nav-tab-active {
+    background: #fff;
+    color: #2271b1;
+    border-bottom: 3px solid #2271b1;
+}
+
+.org360-assessment-builder .tab-content {
+    padding: 25px;
+}
+
+.org360-assessment-builder .tab-pane {
+    display: none;
+}
+
+.org360-assessment-builder .tab-pane.active {
+    display: block;
+}
+
+/* Questionnaires */
+.org360-questionnaires-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.org360-questionnaires-header h2 {
+    margin: 0;
+    color: #1d2327;
+}
+
+.questionnaire-item {
+    background: linear-gradient(to right, #f8f9fa 0%, #fff 100%);
+    border: 1px solid #e0e0e0;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.05);
+}
+
+.questionnaire-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #2271b1;
+}
+
+.questionnaire-header h3 {
+    margin: 0;
+    color: #1d2327;
+    font-size: 18px;
+}
+
+.questions-section {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.questions-section h4 {
+    margin-top: 0;
+    color: #1d2327;
+    font-size: 16px;
+}
+
+.question-item {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border-left: 4px solid #2271b1;
+}
+
+.question-item h5 {
+    margin-top: 0;
+    color: #1d2327;
+    font-size: 14px;
+}
+
+/* User Selection */
+.org360-user-selection {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.org360-select-all {
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    margin: 0;
+}
+
+.org360-select-all label {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.org360-select-all input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.org360-users-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 0;
+    padding: 20px;
+}
+
+.org360-user-checkbox {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin: 5px;
+}
+
+.org360-user-checkbox:hover {
+    background: #f8f9fa;
+    border-color: #2271b1;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(34, 113, 177, 0.15);
+}
+
+.org360-user-checkbox input[type="checkbox"] {
+    margin: 3px 12px 0 0;
+    width: 18px;
+    height: 18px;
+}
+
+.org360-user-checkbox input[type="checkbox"]:checked {
+    accent-color: #2271b1;
+}
+
+.org360-user-checkbox .user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+.org360-user-checkbox .user-info strong {
+    color: #1d2327;
+    font-size: 14px;
+}
+
+.org360-user-checkbox .user-info small {
+    color: #646970;
+    font-size: 12px;
+}
+
+.org360-user-checkbox .user-role {
+    display: inline-block;
+    padding: 3px 10px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Buttons */
+.button.button-primary {
+    background: #2271b1;
+    border-color: #2271b1;
+    transition: all 0.2s;
+}
+
+.button.button-primary:hover {
+    background: #135e96;
+    border-color: #135e96;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(34, 113, 177, 0.3);
+}
+
+.button .dashicons {
+    margin-top: 3px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .org360-admin-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .org360-users-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 782px) {
+    .org360-admin-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .org360-action-buttons {
+        flex-direction: column;
+    }
+    
+    .org360-action-buttons .button {
+        width: 100%;
+        justify-content: center;
+    }
+}
