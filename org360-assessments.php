@@ -141,7 +141,8 @@ class Org360_Assessments {
                 __('Activation Error', 'org360-assessments'),
                 array('back_link' => true)
             );
-    
+        }
+    }
     /**
      * Plugin deactivation
      */
